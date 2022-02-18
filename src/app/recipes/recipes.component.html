@@ -2,7 +2,7 @@
   <div class="col-md-5">
     <app-recipe-list></app-recipe-list>
   </div>
-  <div class="col-md-7" *ngIf="recipeDetail">
-    <app-recipe-detail [recipe]="recipeDetail"></app-recipe-detail>
+  <div class="col-md-7">
+    <router-outlet></router-outlet>
   </div>
 </div>

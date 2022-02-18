@@ -26,13 +26,15 @@ export class RecipeService{
       ])
   ];
 
-  recipeSelected = new EventEmitter<Recipe>();
-
   constructor(private shoppingService: ShoppingService) {
   }
 
   getRecipes() {
     return this.recipes.slice(); // returning a copy of the recipes array
+  }
+
+  getRecipe(id: number) {
+    return this.recipes[id];
   }
 
   addRecipeIngredientsToList(ingredients: Ingredient[]) {

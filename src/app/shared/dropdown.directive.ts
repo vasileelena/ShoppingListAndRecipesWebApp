@@ -12,12 +12,12 @@ export class DropdownDirective implements OnInit{
 
   ngOnInit() {  }
 
-  @HostListener('click') click(evendData: Event){
-    this.isValid = true;
+  @HostListener('click') click(eventData: Event){
+    this.isValid = !this.isValid;
   }
-
-  @HostListener('mouseleave') mouseleave(eventData: Event){
-    this.isValid = false;
-  }
+  //
+  // @HostListener('mouseleave') mouseleave(eventData: Event){
+  //   this.isValid = false;
+  // }
 
 }
