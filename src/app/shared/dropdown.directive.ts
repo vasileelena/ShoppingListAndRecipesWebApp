@@ -15,9 +15,5 @@ export class DropdownDirective implements OnInit{
   @HostListener('click') click(eventData: Event){
     this.isValid = !this.isValid;
   }
-  //
-  // @HostListener('mouseleave') mouseleave(eventData: Event){
-  //   this.isValid = false;
-  // }
 
 }

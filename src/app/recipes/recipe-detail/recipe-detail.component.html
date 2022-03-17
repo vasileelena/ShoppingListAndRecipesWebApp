@@ -29,7 +29,9 @@
           style="cursor:pointer;"
           routerLink="edit">Edit recipe</a></li>
         <li><a
-          style="cursor:pointer;">Delete recipe</a></li>
+          style="cursor:pointer;"
+          routerLink="/recipes"
+          (click)="onDeleteRecipe()">Delete recipe</a></li>
       </ul>
     </div>
   </div>
